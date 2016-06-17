@@ -1,0 +1,126 @@
+.align-form{
+    padding : 15px 0px 0px 0px;
+}
+
+.section{
+    width: 275px;
+    background: #ecf0f1;
+    padding: 0 30px 30px 30px;
+    margin: 60px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#sidebar-wrapper {
+    z-index: 1;
+    position: fixed;
+    width: 17.5%;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2C3E50;
+    top: 60px;
+    opacity: 0.9;
+}
+
+#scroll-page-content {
+    position: absolute;
+    overflow-y: scroll;
+    top: 60px;
+    bottom: 0;
+    left: 17.5%;
+    right: 0;
+}
+
+#page-content-wrapper{
+    /*width: 100%;*/
+    /*position: absolute;*/
+    padding-left: 17.5%;
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav li #profile-name {
+    display: inline-block;
+    color: #ddd;
+    text-indent: 10px;
+}
+
+.sidebar-nav li a:hover {
+    background: #16A085;
+}
+
+.page-header{
+    border-bottom: 1px solid #eee;
+    margin: 5px 5px 5px 0px;
+    padding-bottom: 5px;
+}
+
+#ids{
+    text-align: center;
+    border-color: #dedede;
+    padding: 5px 0;
+    border: 1px #d5d5d3 solid;
+    height:100%;
+    margin: 5px;
+}
+
+#img-box {
+    position:relative;
+    max-width:100%;
+    height:100%;
+}
+
+.img-style {
+    width:100%;
+    height:100%;
+    padding:5px;
+}
+
+.caption {
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    font: 0/0 a; /* Remove the gap between inline(-block) elements */
+    padding:10px;
+}
+
+.caption:before {
+    content: ' ';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.caption a {
+    font: 16px/1 Arial, sans-serif; /* Reset the font property */
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    padding: 1% 0; /* Added a relative padding for the demo */
+}
+
+.img-profile {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+}
+
+#border-line {
+    border: 1px #444441 solid;
+    text-indent: 5px;
+}

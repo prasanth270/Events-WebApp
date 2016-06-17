@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="EventLookUp">
+<head>
+    <meta charset="UTF-8">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/login.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.3.js"></script>
+    <script src="/js/angularApp.js"></script>
+
+    <title>Event Look Up Manager</title>
+</head>
+<body ng-controller="HomeScreenController">
+    <nav class="navbar navbar-inverse">
+        <!-- <div ng-include="'header.ejs'"></div> -->
+        <header></header>
+    </nav>
+    <!-- Total Page Content -->
+    <div id="wrapper">
+        <!--Sidebar-->
+        <sidebar></sidebar>
+
+        <!--Main Content-->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" id="scroll-page-content">
+                <!--Add an Image view-->
+                <div class="row">
+                    <!--Main Page Content-->
+                    <div class="col-md-12">
+                        <!--Header-->
+                        <h1 class="page-header"> {{homeTitle}} </h1>
+                        <div ng-repeat="value in values">
+                            <div class="col-md-3" id="ids">
+                                <div id="img-box">
+                                <img class="img-style" ng-src="{{value.eventImage}}">
+                                    <div class="caption">
+                                        <a href="#">{{value.eventName}}</a>
+                                    </div>
+                                </div>
+                                <p>{{value.eventDescription}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
