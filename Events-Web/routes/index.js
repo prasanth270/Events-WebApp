@@ -6,9 +6,15 @@ router.get('/', function(req, res, next) {
 	console.log('In index js');
   res.render('welcome', { title: 'Express' });
 });
+
 router.get('/home', function(req, res, next) {
 	console.log('In index js');
   	res.render('home', { title: 'Express' });
+});
+
+router.get('/createEvent',function (req,res,next) {
+	 console.log("in Create Event Route");
+	 res.render('createEvent');
 });
 
 router.get('/loginModalRoute',function(req,res){

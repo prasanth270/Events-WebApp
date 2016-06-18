@@ -124,3 +124,31 @@
     border: 1px #444441 solid;
     text-indent: 5px;
 }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;      
+    height: 300px;
+}
+
+#myCarousel {
+    left: -10px;
+}
+
+
+h1.page-header{
+    font-size: 24px;
+}
+
+#display-text {
+    padding-top: 5px;
+}
+#fileNameInput {
+    float: right;
+    width: initial;
+}
+.row{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
